@@ -6,13 +6,13 @@ import theme from '../../styles/theme.styles';
 import DropDownArrowSVG from '../Icons/DropDownArrow';
 import WarningSVG from '../Icons/Warning';
 
-import useScrollPosition from './hooks/useScrollPosition';
-import useOnClickOutside from './hooks/useOnClickOutside';
+import useScrollPosition from '../hooks/useScrollPosition';
+import useOnClickOutside from '../hooks/useOnClickOutside';
 import Search from '../Search';
 
 import CheckBoxFilledSVG from '../Icons/CheckBoxFilled';
 import CheckBoxSVG from '../Icons/CheckBox';
-import { getListHeightSize } from './utils';
+import { getListHeightSize } from '../utils';
 
 export type StrNumType = string | number | null;
 export type DropdownWidthSize = 'auto' | 'xl' | 'lg' | 'md' | 'sm' | 'xs';

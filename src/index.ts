@@ -8,7 +8,7 @@ export { default as DataStorageCapacityProgressBar } from './components/DataStor
 export { default as DataStorageUploadStatusProgressBar } from './components/DataStorageUploadStatusProgressBar';
 export { default as DatePicker } from './components/DatePicker';
 export { default as Dropdown } from './components/Dropdown';
-export { default as DropdownMultiSelect } from './components/Dropdown';
+export { default as DropdownMultiSelect } from './components/DropdownMultiSelect';
 export { default as Input } from './components/Input';
 export { default as Modal } from './components/Modal';
 export { default as Pagination } from './components/Pagination';
