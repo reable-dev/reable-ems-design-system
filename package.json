@@ -1,7 +1,7 @@
 {
   "name": "@reable/ems-design-system",
-  "version": "0.0.2",
-  "description": "@reable-ems/design-system",
+  "version": "0.0.5",
+  "description": "@reable/ems-design-system",
   "main": "dist/index.js",
   "module": "./dist/index.js",
   "type": "module",

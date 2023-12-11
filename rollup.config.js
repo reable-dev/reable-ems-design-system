@@ -22,14 +22,6 @@ export default {
   ],
   external: [/@babel\/runtime/],
   plugins: [
-    banner2(
-      () => `
-      'use client'
-    /**
-     * rollup-plugin-banner2
-     */
-    `
-    ),
     url(), // 미디어 파일을 dataURI 형태로 불러와서 사용 할 수 있게 해줌
     svgr(), // SVG를 컴포넌트로 사용 할 수 있게 해줌
     peerDepsExternal() /* peerDependencies로 설치한 라이브러리들을 external 모듈로 설정
