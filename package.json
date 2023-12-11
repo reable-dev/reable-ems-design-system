@@ -1,0 +1,102 @@
+{
+  "name": "@reable/ems-design-system",
+  "version": "0.0.2",
+  "description": "@reable-ems/design-system",
+  "main": "dist/index.js",
+  "module": "./dist/index.js",
+  "type": "module",
+  "outputDir": "./dist",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "build:packdev": "cross-env NODE_ENV=development npm run build",
+    "build:packprod": "cross-env NODE_ENV=production npm run build",
+    "build:watch": "rollup -c --bundleConfig --watch",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jaeha Lee <wogkdkrm112@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EAN-digital-lab/reable-ems-design-system"
+  },
+  "contributors": [
+    {
+      "name": "Jaeha Lee",
+      "email": "wogkdkrm112@gmail.com"
+    },
+    {
+      "name": "WooCheol Choi",
+      "email": "chltjdrhd777@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "components",
+    "ui-library"
+  ],
+  "peerDependencies": {
+    "react": ">=18.x",
+    "react-dom": ">=18.x",
+    "styled-components": ">=6.x"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.5",
+    "@babel/plugin-transform-runtime": "^7.23.4",
+    "@babel/preset-env": "^7.23.5",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-image": "^3.0.3",
+    "@rollup/plugin-json": "^6.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@rollup/plugin-url": "^8.0.2",
+    "@storybook/addon-essentials": "^7.6.4",
+    "@storybook/addon-interactions": "^7.6.4",
+    "@storybook/addon-links": "^7.6.4",
+    "@storybook/addon-onboarding": "^1.0.9",
+    "@storybook/addon-styling": "^1.3.7",
+    "@storybook/addon-themes": "^7.6.4",
+    "@storybook/blocks": "^7.6.4",
+    "@storybook/jest": "^0.2.3",
+    "@storybook/react": "^7.6.4",
+    "@storybook/react-webpack5": "^7.6.4",
+    "@storybook/test-runner": "^0.16.0",
+    "@storybook/testing-library": "^0.2.2",
+    "@svgr/rollup": "^8.1.0",
+    "@svgr/webpack": "^8.1.0",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "babel-loader": "^9.1.3",
+    "chromatic": "^10.1.0",
+    "cross-env": "^7.0.3",
+    "eslint-plugin-storybook": "^0.6.15",
+    "react": "^18.2.0",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "react-dom": "^18.2.0",
+    "rimraf": "^5.0.1",
+    "rollup": "^4.7.0",
+    "rollup-plugin-banner2": "^1.2.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-visualizer": "^5.9.2",
+    "storybook": "^7.6.4",
+    "styled-components": "^6.1.1",
+    "tsconfig-paths-webpack-plugin": "^4.1.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "antd": "^5.12.1",
+    "dayjs": "^1.11.10"
+  }
+}
