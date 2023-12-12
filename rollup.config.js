@@ -22,8 +22,6 @@ export default {
   ],
   external: [/@babel\/runtime/],
   plugins: [
-    url(), // 미디어 파일을 dataURI 형태로 불러와서 사용 할 수 있게 해줌
-    svgr(), // SVG를 컴포넌트로 사용 할 수 있게 해줌
     peerDepsExternal() /* peerDependencies로 설치한 라이브러리들을 external 모듈로 설정
     즉, 번들링된 결과에 포함시키지 않음 */,
     resolve({ extensions }),
@@ -31,6 +29,8 @@ export default {
       // CommonJS 형태로 만들어진 모듈도 불러와서 사용 할 수 있게 해줌
       include: 'node_modules/**',
     }),
+    url(), // 미디어 파일을 dataURI 형태로 불러와서 사용 할 수 있게 해줌
+    svgr(), // SVG를 컴포넌트로 사용 할 수 있게 해줌
 
     babel({
       // Babel을 사용 할 수 있게 해줌

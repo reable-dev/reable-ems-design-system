@@ -1,14 +1,12 @@
 {
   "name": "@reable/ems-design-system",
-  "version": "0.0.8",
+  "version": "0.0.14",
   "description": "@reable/ems-design-system",
-  "main": "dist/index.js",
   "module": "./dist/index.js",
   "type": "module",
-  "outputDir": "./dist",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "files": [
-    "dist",
+    "/dist",
     "src",
     "README.md"
   ],
@@ -20,7 +18,8 @@
     "build:watch": "rollup -c --bundleConfig --watch",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:types": "tsc --emitDeclarationOnly"
   },
   "author": "Jaeha Lee <wogkdkrm112@gmail.com>",
   "repository": {
