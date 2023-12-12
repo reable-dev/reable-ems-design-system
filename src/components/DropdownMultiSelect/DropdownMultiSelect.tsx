@@ -171,8 +171,8 @@ const DropdownMultiSelect = forwardRef(
       : options.find((option) => option.value === externalValue)?.label;
 
     const getSVGColor = () => {
-      const { fail, blue500, gray600 } = theme.color;
-      if (isOpen) return blue500;
+      const { fail, primary500, gray600 } = theme.color;
+      if (isOpen) return primary500;
       if (error) return fail;
       return gray600;
     };
@@ -263,7 +263,7 @@ const DropdownMultiSelect = forwardRef(
                             width={14}
                             height={14}
                             $filled
-                            color={theme.color.blue500}
+                            color={theme.color.primary500}
                           />
                         ) : (
                           <CheckBoxSVG width={14} height={14} />

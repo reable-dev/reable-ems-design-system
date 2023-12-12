@@ -12,7 +12,7 @@ export const Container = styled.button<SwitchProps>`
   user-select: none;
 
   background-color: ${({ theme, checked, disabled }) =>
-    disabled ? theme.color.gray300 : checked ? theme.color.blue500 : theme.color.gray300};
+    disabled ? theme.color.gray300 : checked ? theme.color.primary500 : theme.color.gray300};
 `;
 
 export const SwitchHandle = styled.div<{ checked?: boolean; disabled: boolean }>`
@@ -53,17 +53,13 @@ export const SwitchInner = styled.div`
   height: 100%;
   padding-inline-start: 24px;
   padding-inline-end: 9px;
-  transition:
-    padding-inline-start 0.2s ease-in-out,
-    padding-inline-end 0.2s ease-in-out;
+  transition: padding-inline-start 0.2s ease-in-out, padding-inline-end 0.2s ease-in-out;
 `;
 export const SwitchInnerChecked = styled.span`
   display: block;
   color: #fff;
   font-size: 12px;
-  transition:
-    margin-inline-start 0.2s ease-in-out,
-    margin-inline-end 0.2s ease-in-out;
+  transition: margin-inline-start 0.2s ease-in-out, margin-inline-end 0.2s ease-in-out;
   pointer-events: none;
 
   margin-inline-start: calc(-100% + 22px - 48px);

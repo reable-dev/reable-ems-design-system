@@ -22,7 +22,7 @@ export const SliderFillTrack = styled.div<{ fill?: string; disabled?: boolean }>
   height: 4px;
   border-radius: 2px;
   background-color: ${({ theme, disabled }) =>
-    disabled ? theme.color.gray500 : theme.color.blue500};
+    disabled ? theme.color.gray500 : theme.color.primary500};
   top: calc(50% - 2px);
 `;
 
@@ -52,7 +52,7 @@ export const Slider = styled.input<{ disabled?: boolean }>`
     width: 16px; /* Thumb의 너비 */
     height: 16px; /* Thumb의 높이 */
     background-color: ${({ theme, disabled }) =>
-      disabled ? theme.color.gray500 : theme.color.blue500}; /* Thumb의 배경색 */
+      disabled ? theme.color.gray500 : theme.color.primary500}; /* Thumb의 배경색 */
     cursor: pointer;
     border-radius: 50%;
 
@@ -64,7 +64,7 @@ export const Slider = styled.input<{ disabled?: boolean }>`
     width: 16px; /* Thumb의 너비 */
     height: 16px; /* Thumb의 높이 */
     background-color: ${({ theme, disabled }) =>
-      disabled ? theme.color.gray500 : theme.color.blue500}; /* Thumb의 배경색 */
+      disabled ? theme.color.gray500 : theme.color.primary500}; /* Thumb의 배경색 */
     cursor: pointer;
     border-radius: 50%;
 

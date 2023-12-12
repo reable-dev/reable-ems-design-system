@@ -49,7 +49,7 @@ const DatePicker = forwardRef(
       : error
       ? theme.color.fail
       : isFocused
-      ? theme.color.blue500
+      ? theme.color.primary500
       : value
       ? theme.color.gray600
       : theme.color.gray400;

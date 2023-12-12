@@ -55,7 +55,7 @@ export const Container = styled.div<{
   }
 
   &:focus-within {
-    border: 1px solid ${({ theme }) => theme.color.blue500};
+    border: 1px solid ${({ theme }) => theme.color.primary500};
   }
 `;
 

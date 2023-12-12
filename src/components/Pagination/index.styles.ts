@@ -66,7 +66,7 @@ export const PageButton = styled.button<{ $isCurrentPage?: boolean }>`
   ${({ $isCurrentPage, theme }) =>
     $isCurrentPage &&
     css`
-      color: ${theme.color.blue500};
+      color: ${theme.color.primary500};
       border-radius: 50%;
       background-color: ${({ theme }) => theme.color.blueGray200};
     `}

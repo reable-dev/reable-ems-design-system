@@ -44,7 +44,7 @@ export default function TableCheckbox({
           <>
             {checked ? (
               // 체크됨
-              <CheckBoxFilledSVG width={20} height={20} $filled color={theme.color.blue500} />
+              <CheckBoxFilledSVG width={20} height={20} $filled color={theme.color.primary500} />
             ) : (
               // 체크 안 됨
               <CheckBoxSVG width={20} height={20} color={theme.color.gray600} />

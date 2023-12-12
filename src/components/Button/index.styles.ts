@@ -56,17 +56,17 @@ export const Container = styled.button<{
 
     switch ($variants) {
       case 'primary':
-        backgroundColor = theme.color.blue500;
+        backgroundColor = theme.color.primary500;
         color = theme.color.gray50;
-        hoverBackgroundColor = theme.color.blue550;
+        hoverBackgroundColor = theme.color.primary550;
         disabledBackgroundColor = theme.color.gray300;
         disabledColor = theme.color.gray500;
         break;
       case 'secondary':
-        backgroundColor = theme.color.blue100;
-        color = theme.color.blue600;
-        hoverBackgroundColor = theme.color.blue200;
-        hoverColor = theme.color.blue600;
+        backgroundColor = theme.color.primary100;
+        color = theme.color.primary600;
+        hoverBackgroundColor = theme.color.primary200;
+        hoverColor = theme.color.primary600;
         disabledBackgroundColor = theme.color.gray200;
         disabledColor = theme.color.gray500;
         break;
@@ -81,7 +81,7 @@ export const Container = styled.button<{
       case 'link':
         backgroundColor = theme.color.gray50;
         color = theme.color.infoLink;
-        hoverColor = theme.color.blue600;
+        hoverColor = theme.color.primary600;
         disabledColor = theme.color.gray500;
         break;
       case 'warning':
@@ -93,9 +93,9 @@ export const Container = styled.button<{
         disabledColor = theme.color.gray500;
         break;
       default:
-        backgroundColor = theme.color.blue500;
+        backgroundColor = theme.color.primary500;
         color = theme.color.gray50;
-        hoverBackgroundColor = theme.color.blue550;
+        hoverBackgroundColor = theme.color.primary550;
         disabledBackgroundColor = theme.color.gray300;
         disabledColor = theme.color.gray500;
         break;

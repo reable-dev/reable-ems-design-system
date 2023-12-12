@@ -8,7 +8,7 @@ export const RadialContainer = styled.div<Pick<RadioSelectProps, 'size'>>`
   & {
     --defaultColor: ${theme.color.gray600};
     --hoverColor: ${theme.color.gray500};
-    --clickedColor: ${theme.color.blue500};
+    --clickedColor: ${theme.color.primary500};
     --disabledColor: ${theme.color.gray400};
   }
 

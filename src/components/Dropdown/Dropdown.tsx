@@ -173,9 +173,9 @@ const Dropdown = forwardRef(
     }, [externalValue, options, displayValue]);
 
     const getSVGColor = () => {
-      const { fail, blue500, gray600, gray500 } = theme.color;
+      const { fail, primary500, gray600, gray500 } = theme.color;
       if (disabled) return gray500;
-      if (isOpen) return blue500;
+      if (isOpen) return primary500;
       if (error) return fail;
       return gray600;
     };

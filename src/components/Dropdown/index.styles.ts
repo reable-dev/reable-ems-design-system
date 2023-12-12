@@ -72,7 +72,7 @@ export const Wrapper = styled.div<{
     disabled
       ? theme.color.gray400
       : $isOpen
-      ? theme.color.blue500
+      ? theme.color.primary500
       : $error
       ? theme.color.fail
       : $isExistValue === '선택' || $isExistValue === placeholder // 선택된 값이 없을 때
@@ -90,7 +90,7 @@ export const Wrapper = styled.div<{
         disabled
           ? theme.color.gray400
           : $isOpen
-          ? theme.color.blue500
+          ? theme.color.primary500
           : $error
           ? theme.color.fail
           : theme.color.gray600};
@@ -132,7 +132,7 @@ export const DropdownLabel = styled.div<{
       ? theme.color.gray500
       : // dropdown open
       $isOpen
-      ? theme.color.blue500
+      ? theme.color.primary500
       : // error
       $error
       ? theme.color.fail
@@ -146,7 +146,7 @@ export const DropdownLabel = styled.div<{
       disabled
         ? theme.color.gray500
         : $isOpen
-        ? theme.color.blue500
+        ? theme.color.primary500
         : $error
         ? theme.color.fail
         : theme.color.gray800};

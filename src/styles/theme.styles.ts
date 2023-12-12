@@ -1,12 +1,12 @@
 const color = {
   // 여기부터 진짜!!!!
-  blue75: '#EAF2FE',
-  blue100: '#D5E5FD',
-  blue200: '#C0D9FC',
-  blue300: '#ABCCFB',
-  blue500: '#1874F6',
-  blue550: '#1568DD',
-  blue600: '#135CC4',
+  primary75: '#EAF2FE',
+  primary100: '#D5E5FD',
+  primary200: '#C0D9FC',
+  primary300: '#ABCCFB',
+  primary500: '#1874F6',
+  primary550: '#1568DD',
+  primary600: '#135CC4',
 
   gray50: '#FFFFFF',
   gray70: '#FDFDFD',

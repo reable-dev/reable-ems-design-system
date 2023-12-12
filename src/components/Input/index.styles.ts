@@ -34,7 +34,7 @@ export const Wrapper = styled.div<{
     disabled ? theme.color.gray100 : theme.color.gray50};
 
   &:focus-within {
-    border: 1px solid ${({ theme, $error }) => ($error ? theme.color.fail : theme.color.blue500)};
+    border: 1px solid ${({ theme, $error }) => ($error ? theme.color.fail : theme.color.primary500)};
   }
 
   ${({ size, width }) => {
