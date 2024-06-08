@@ -7,10 +7,6 @@ import theme from '../../styles/theme.styles';
 import Chip from './Chip';
 import ChipList, { OptionType } from './ChipList';
 
-import Warning from '../Icons/Warning';
-import CloseRound from '../Icons/CloseRound';
-import WarningSVG from '../Icons/Warning';
-
 const meta: Meta<typeof Chip> = {
   title: 'common/Chip',
   component: Chip,
@@ -23,12 +19,6 @@ const meta: Meta<typeof Chip> = {
 };
 
 export default meta;
-
-const IconMap: any = {
-  Warning: <Warning width={16} height={16} color={theme.color.gray100} />,
-  CloseRound: <CloseRound width={16} height={16} color={theme.color.gray100} />,
-  none: undefined,
-};
 
 export const Default = (args: any) => {
   return (
